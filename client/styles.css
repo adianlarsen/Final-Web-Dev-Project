@@ -1,0 +1,102 @@
+:root {
+    --header-color: #998289;
+    --effect-color: #e9afb8;
+    --background-color: #f0f0f0;
+    --card-background-color: #f1f0f0;
+    --text-color: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*header*/
+
+.shared-header {
+    background-color: var(--header-color);
+    color: white;
+    padding: 1.25em 2em;
+}
+
+.shared-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shared-nav h1 {
+    font-size: 2em;
+}
+
+.shared-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+
+.shared-nav li {
+    list-style: none;
+}
+
+.shared-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.shared-nav a:hover {
+    color: var(--effect-color);
+}
+
+/*main*/
+
+main {
+    width: 85%;
+    margin: 2em auto;
+    flex: 1;
+}
+
+section {
+    background-color: var(--card-background-color);
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+}
+
+section h2, section p {
+    margin-bottom: 0.75em;
+}
+
+section ul {
+    margin-left: 1.5em;
+}
+
+section a {
+    color: var(--header-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: var(--effect-color);
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--header-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}

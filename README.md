@@ -17,10 +17,10 @@ For my Final Project, I would like to build a website for tracking your travel w
 - [x] Design data for trips and activities
 
 ## Week 2 07/17/2026
-- [] Create headers, navigation and foooter
-- [] Build Home, Trips, and Create Trips and trip details pages
-- [] Style pages with CSS
-- [] Create a beautiul layout with flex
+- [x] Create headers, navigation and foooter
+- [x] Build Home, Trips, and Create Trips and trip details pages
+- [x] Style pages with CSS
+- [x] Create a beautiul layout with flex
 - [] Add forms and rules
 
 ## Week 3 07/24/2026
@@ -39,3 +39,8 @@ For my Final Project, I would like to build a website for tracking your travel w
 - [] Fix bugs
 - [] Cleanup Code
 - [] Submit Project
+
+# Project Milestones
+
+## Milestone 1
+My project has been going fairly well. I am working towards completeing the requirmenets,, specifically my html and css this time. I dont have any questions and would say that I am about 10 percent completed or so with my project.
