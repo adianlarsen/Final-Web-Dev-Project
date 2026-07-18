@@ -100,3 +100,96 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+/*trips*/
+
+#filter-form {
+    margin-top: 1em;
+}
+
+#filter-form input {
+    margin-right: 1em;
+}
+
+#filter-form select {
+    margin-right: 1em;
+}
+
+#filter-form button {
+    padding: 0.4em 0.8em;
+}
+
+#trip-list {
+    margin-top: 1em;
+}
+
+.trip-card {
+    border: 1px solid var(--effect-color);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#no-trips-message {
+    margin-top: 1em;
+}
+
+/*trip*/
+
+#schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+#schedule-table th {
+    background-color: var(--header-color);
+    color: white;
+    padding: 0.75em;
+    text-align: left;
+}
+
+#schedule-table td {
+    border: 1px solid var(--effect-color);
+    padding: 0.75em;
+}
+
+#schedule-table tbody tr:nth-child(even) {
+    background-color: var(--page-color);
+}
+
+aside {
+    background-color: var(--card-background-color);
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+}
+
+#weather {
+    margin-top: 1em;
+}
+
+/*create*/
+
+#trip-form {
+    margin-top: 1em;
+}
+
+#trip-form label {
+    display: block;
+    margin-top: 1em;
+}
+
+#trip-form input {
+    width: 100%;
+    padding: 0.5em;
+}
+
+#trip-form select {
+    width: 100%;
+    padding: 0.5em;
+}
+
+#trip-form button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+}

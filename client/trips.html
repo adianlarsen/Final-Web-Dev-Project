@@ -26,7 +26,31 @@
         </header>
 
         <main>
+            <section>
+                <h2>My Trips</h2>
 
+                <form id="filter-form">
+                    <label for="trip-search">Search Trip</label>
+                    <input id="trip-search" type="text" placeholder="Search Trips">
+                    <label for="status-filter">Trip Status</label>
+                    <select id="status-filter">
+                        <option value="all">All Trips</option>
+                        <option value="upcoming">Upcoming</option>
+                        <option value="current">Current</option>
+                        <option value="completed">Completed</option>
+                    </select>
+
+                    <button type="reset">Reset Selection</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Saved Trips</h2>
+
+                <div id="trip-list"></div>
+
+                <p id="no-trips">There are no saved trips.</p>
+            </section>
         </main>
 
         <footer>

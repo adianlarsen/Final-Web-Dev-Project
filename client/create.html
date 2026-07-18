@@ -26,7 +26,35 @@
         </header>
         
         <main>
+            <section>
+                <h2>Create a Trip</h2>
 
+                <form id="trip-form">
+                    <label for="trip-name">Trip Name</label>
+                    <input id="trip-name" type="text">
+
+                    <label for="destination">Destination</label>
+                    <input id="destination" type="text">
+
+                    <label for="start-date">Start Date</label>
+                    <input id="start-date" type="date">
+
+                    <label for="end-date">End Date</label>
+                    <input id="end-date" type="date">
+
+                    <label for="budget">Budget</label>
+                    <input id="budget" type="number">
+
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="upcoming">Upcoming</option>
+                        <option value="current">Current</option>
+                        <option value="completed">Completed</option>
+                    </select>
+
+                    <button type="submit">Create Trip</button>
+                </form>
+            </section>
         </main>
 
         <footer>

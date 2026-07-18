@@ -21,7 +21,7 @@ For my Final Project, I would like to build a website for tracking your travel w
 - [x] Build Home, Trips, and Create Trips and trip details pages
 - [x] Style pages with CSS
 - [x] Create a beautiul layout with flex
-- [] Add forms and rules
+- [x] Add forms and rules
 
 ## Week 3 07/24/2026
 - [] Build C# API
@@ -41,6 +41,11 @@ For my Final Project, I would like to build a website for tracking your travel w
 - [] Submit Project
 
 # Project Milestones
-
+## Github link: https://github.com/adianlarsen/Final-Web-Dev-Project
 ## Milestone 1
 My project has been going fairly well. I am working towards completeing the requirmenets,, specifically my html and css this time. I dont have any questions and would say that I am about 10 percent completed or so with my project.
+
+## Milestone 2
+This week went pretty good for my project. I was able to get my html and styling done how I like where I can now start to work on my javascript and api next week. This has been a fun project to see how a full website starts to come together.
+
+I would say that my project is about 20-20 percent complete now. I dont have any questions about my project. I feel that I have kept up well on the requirements for my schedule.
