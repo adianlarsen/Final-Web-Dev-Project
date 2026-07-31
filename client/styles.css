@@ -1,195 +1,223 @@
 :root {
-    --header-color: #998289;
-    --effect-color: #e9afb8;
-    --background-color: #f0f0f0;
-    --card-background-color: #f1f0f0;
-    --text-color: #252525;
+  --header-color: #998289;
+  --effect-color: #e9afb8;
+  --background-color: #f0f0f0;
+  --card-background-color: #f1f0f0;
+  --text-color: #252525;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*header*/
 
 .shared-header {
-    background-color: var(--header-color);
-    color: white;
-    padding: 1.25em 2em;
+  background-color: var(--header-color);
+  color: white;
+  padding: 1.25em 2em;
 }
 
 .shared-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .shared-nav h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .shared-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2em;
+  display: flex;
+  list-style: none;
+  gap: 2em;
 }
 
 .shared-nav li {
-    list-style: none;
+  list-style: none;
 }
 
 .shared-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
 }
 
 .shared-nav a:hover {
-    color: var(--effect-color);
+  color: var(--effect-color);
 }
 
 /*main*/
 
 main {
-    width: 85%;
-    margin: 2em auto;
-    flex: 1;
+  width: 85%;
+  margin: 2em auto;
+  flex: 1;
 }
 
 section {
-    background-color: var(--card-background-color);
-    padding: 1.5em;
-    margin-bottom: 1.5em;
-    border-radius: 0.5em;
+  background-color: var(--card-background-color);
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 0.5em;
 }
 
-section h2, section p {
-    margin-bottom: 0.75em;
+figure {
+  margin-bottom: 1em;
+}
+
+section img {
+  display: block;
+  max-width: 60%;
+  border-radius: 0.5em;
+  transition: transform 0.3s;
+}
+
+section img:hover {
+  transform: scale(1.02);
+}
+
+figcaption {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+section h2,
+section p {
+  margin-bottom: 0.75em;
 }
 
 section ul {
-    margin-left: 1.5em;
+  margin-left: 1.5em;
 }
 
 section a {
-    color: var(--header-color);
-    text-decoration: none;
-    transition: color 0.3s;
+  color: var(--header-color);
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 section a:hover {
-    color: var(--effect-color);
+  color: var(--effect-color);
 }
 
 /*footer*/
 
 footer {
-    background-color: var(--header-color);
-    color: white;
-    text-align: center;
-    padding: 1em;
+  background-color: var(--header-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
 
 /*trips*/
 
 #filter-form {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 #filter-form input {
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 #filter-form select {
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 #filter-form button {
-    padding: 0.4em 0.8em;
+  padding: 0.4em 0.8em;
 }
 
 #trip-list {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .trip-card {
-    border: 1px solid var(--effect-color);
-    padding: 1em;
-    margin-bottom: 1em;
+  border: 1px solid var(--effect-color);
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  transition: transform 0.3s;
 }
 
-#no-trips-message {
-    margin-top: 1em;
+.trip-card:hover {
+  transform: translateY(-0.2em);
+}
+
+#no-trips {
+  margin-top: 1em;
 }
 
 /*trip*/
 
 #schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1em;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
 }
 
 #schedule-table th {
-    background-color: var(--header-color);
-    color: white;
-    padding: 0.75em;
-    text-align: left;
+  background-color: var(--header-color);
+  color: white;
+  padding: 0.75em;
+  text-align: left;
 }
 
 #schedule-table td {
-    border: 1px solid var(--effect-color);
-    padding: 0.75em;
+  border: 1px solid var(--effect-color);
+  padding: 0.75em;
 }
 
 #schedule-table tbody tr:nth-child(even) {
-    background-color: var(--page-color);
+  background-color: var(--background-color);
 }
 
 aside {
-    background-color: var(--card-background-color);
-    padding: 1.5em;
-    margin-bottom: 1.5em;
-    border-radius: 0.5em;
+  background-color: var(--card-background-color);
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 0.5em;
 }
 
 #weather {
-    margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 /*create*/
 
 #trip-form {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 #trip-form label {
-    display: block;
-    margin-top: 1em;
+  display: block;
+  margin-top: 1em;
 }
 
 #trip-form input {
-    width: 100%;
-    padding: 0.5em;
+  width: 100%;
+  padding: 0.5em;
 }
 
 #trip-form select {
-    width: 100%;
-    padding: 0.5em;
+  width: 100%;
+  padding: 0.5em;
 }
 
 #trip-form button {
-    margin-top: 1em;
-    padding: 0.5em 1em;
+  margin-top: 1em;
+  padding: 0.5em 1em;
 }

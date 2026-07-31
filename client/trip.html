@@ -1,63 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Trip Details</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Details</title>
 
-        <script src="./src/ui/trip-ui.js" type="module"></script>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <header class="shared-header">
-            <nav class="shared-nav">
-                <h1>Travel Tracker</h1>
+  <body>
+    <header class="shared-header">
+      <nav class="shared-nav">
+        <h1>Travel Tracker</h1>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="create.html">Create Trip</a></li>
-                </ul>
-            </nav>
-        </header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="create.html">Create Trip</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
-            <section>
-                <h2>Trip Details</h2>
-                <div id="trip-details"></div>
-            </section>
+    <main>
+      <section>
+        <h2>Trip Details</h2>
+        <div id="trip-details"></div>
+      </section>
 
-            <section>
-                <h2>Schedule</h2>
+      <section>
+        <h2>Schedule</h2>
 
-                <table id="schedule-table">
-                    <thead>
+        <form id="schedule-form">
+          <input type="text" id="activity" placeholder="Activity" />
+          <input type="date" id="day" />
 
-                        <tr>
-                            <th>Day</th>
-                            <th>Activity</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody></tbody>
-                </table>
-            </section>
+          <button type="submit">Add</button>
+          <button type="reset">Reset</button>
+        </form>
 
-            <aside>
-                <h2>Weather</h2>
+        <table id="schedule-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Activity</th>
+              <th>Action</th>
+            </tr>
+          </thead>
 
-                <div id="weather"></div>
-            </aside>
-        </main>
+          <tbody id="schedule-body"></tbody>
+        </table>
+      </section>
 
-        <footer>
-            <p>Snow College || Travel Tracker</p>
-        </footer>
+      <aside>
+        <h2>Weather</h2>
 
-        <script type="module" src="src/ui/trip-ui.js"></script>
-    </body>
+        <div id="weather"></div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Snow College || Travel Tracker</p>
+    </footer>
+
+    <script type="module" src="src/ui/trip-ui.js"></script>
+  </body>
 </html>

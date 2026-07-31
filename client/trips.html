@@ -1,62 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>My Trips</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Trips</title>
 
-        <script src="./src/ui/trips-ui.js" type="module"></script>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <header class="shared-header">
-            <nav class="shared-nav">
-                <h1>Travel Tracker</h1>
+  <body>
+    <header class="shared-header">
+      <nav class="shared-nav">
+        <h1>Travel Tracker</h1>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="create.html">Create Trip</a></li>
-                </ul>
-            </nav>
-        </header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="create.html">Create Trip</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
-            <section>
-                <h2>My Trips</h2>
+    <main>
+      <section>
+        <h2>My Trips</h2>
 
-                <form id="filter-form">
-                    <label for="trip-search">Search Trip</label>
-                    <input id="trip-search" type="text" placeholder="Search Trips">
-                    <label for="status-filter">Trip Status</label>
-                    <select id="status-filter">
-                        <option value="all">All Trips</option>
-                        <option value="upcoming">Upcoming</option>
-                        <option value="current">Current</option>
-                        <option value="completed">Completed</option>
-                    </select>
+        <form id="filter-form">
+          <label for="trip-search">Search Trip</label>
+          <input id="trip-search" type="text" placeholder="Search Trips" />
+          <label for="status-filter">Trip Status</label>
+          <select id="status-filter">
+            <option value="all">All Trips</option>
+            <option value="upcoming">Upcoming</option>
+            <option value="current">Current</option>
+            <option value="completed">Completed</option>
+          </select>
 
-                    <button type="reset">Reset Selection</button>
-                </form>
-            </section>
+          <button type="submit">Filter</button>
+          <button type="reset">Reset Selection</button>
+        </form>
+      </section>
 
-            <section>
-                <h2>Saved Trips</h2>
+      <section>
+        <h2>Saved Trips</h2>
 
-                <div id="trip-list"></div>
+        <div id="trip-list"></div>
 
-                <p id="no-trips" hidden>There are no saved trips.</p>
-            </section>
-        </main>
+        <p id="no-trips" hidden>There are no saved trips.</p>
+      </section>
+    </main>
 
-        <footer>
-            <p>Snow College || Travel Tracker</p>
-        </footer>
+    <footer>
+      <p>Snow College || Travel Tracker</p>
+    </footer>
 
-        <script type="module" src="src/ui/trips-ui.js"></script>
-    </body>
+    <script type="module" src="src/ui/trips-ui.js"></script>
+  </body>
 </html>

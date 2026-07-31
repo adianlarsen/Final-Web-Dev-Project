@@ -26,19 +26,18 @@ For my Final Project, I would like to build a website for tracking your travel w
 ## Week 3 07/24/2026
 - [x] Build C# API
 - [x] Connect website to API
-- [] Add create, edit, delete and view trip
+- [x] Add create, edit, and view trip
 - [x] Connect external api for weather information
 - [x] Read trip ID from query string
-- [] Implement filtering and searching
+- [x] Implement filtering and searching
 
 ## Week 4 07/31/2026
-- [] Add drag and drop
-- [] Create budget table
-- [] Finish CSS Styling
-- [] Test pages
-- [] Fix bugs
-- [] Cleanup Code
-- [] Submit Project
+- [x] Add drag and drop
+- [x] Finish CSS Styling
+- [x] Test pages
+- [x] Fix bugs
+- [x] Cleanup Code
+- [x] Submit Project
 
 # Project Milestones
 ## Github link: https://github.com/adianlarsen/Final-Web-Dev-Project

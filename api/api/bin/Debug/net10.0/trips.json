@@ -1,1 +1,1 @@
-[]
+[{"Id":1,"Country":"Ecuador","City":"Quito","StartDate":"2026-08-19","EndDate":"2026-09-24","Budget":2500,"Status":"upcoming"},{"Id":2,"Country":"France","City":"Paris","StartDate":"2026-09-16","EndDate":"2026-09-30","Budget":3000,"Status":"upcoming"},{"Id":3,"Country":"Canada","City":"Toronto","StartDate":"2026-11-19","EndDate":"2026-12-15","Budget":3245,"Status":"upcoming"}]

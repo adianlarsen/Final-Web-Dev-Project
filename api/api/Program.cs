@@ -40,7 +40,7 @@ app.MapPost("/trips", (Trip trip) =>
     }
 
     Trip newTrip = trip with { Id = nextId };
-    
+
     trips.Add(newTrip);
 
     var json = JsonSerializer.Serialize(trips);
